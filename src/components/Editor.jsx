@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react'
-// import Codemirror from 'codemirror';
+// import codemirror from 'codemirror';
 
 const Editor =()=>{
   useEffect(()=>{
     async function init(){
-      Codemirror.formTextArea(document.getElementById("realtimeEditor"),{
-          mode : {name: 'javascript', JSON: true},
+      codemirror.formTextArea(document.getElementById("realtimeEditor"),{
+          mode : {name: 'javascript', Json: true},
           theme: 'dracula',
           autoCloseTag: true,
           autoCloseBrackets: true,
